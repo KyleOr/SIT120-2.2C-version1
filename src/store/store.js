@@ -3,12 +3,12 @@ import { createStore } from 'vuex';
 
 export default createStore({
   state: {
-    userName: '', // Initialize an empty string for the user's name
+    recipes: [], // Initialize an empty array for recipes
   },
   mutations: {
-    setUserName(state, name) {
-      state.userName = name; // Update the user's name in the state
+    addRecipe(state, recipe) {
+      state.recipes.push(recipe); // Add the recipe to the state
     },
   },
-  // ...other Vuex store configurations
+  
 });
